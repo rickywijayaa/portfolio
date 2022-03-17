@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --line: #BBC1E1;
+    --line-active: #121314;
+}
+
+body{
+    padding: 5vh 10vw;
+
+    #app{
+        h1{
+            font-size: 3.5em;
+            margin-bottom: 0px;
+        }
+    
+        #name{
+            font-weight: 500;
+            font-size: 2.2em;
+            margin: 20px 0;
+        }
+        
+        p {
+            font-size: 1.6em;
+            line-height: 1.4;
+            max-width: 28em;
+            margin: 0;
+            font-weight: 300;
+            a {
+                display: inline-block;
+                position: relative;
+                text-decoration: none;
+                color: inherit;
+                margin: 0 var(--spacing, 0px);
+                transition: margin .5s;
+                svg {
+                    width: auto;
+                    height: 55px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-50%, 7px) translateZ(0);
+                    fill: none;
+                    stroke: var(--stroke, var(--line));
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                    stroke-dasharray: var(--offset, 69px) 278px;
+                    stroke-dashoffset: 361px;
+                    transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+                }
+                &:hover {
+                    --spacing: 4px;
+                    --stroke: var(--line-active);
+                    --stroke-delay: .1s;
+                    --offset: 180px;
+                }
+            }
+    
+            .media{
+                text-decoration: none;
+                color: #121314;
+                margin: 0 1px;
+            }
+        }
+    
+        .info {
+            line-height: 1.8;
+        }
+    }
+}
+

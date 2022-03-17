@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --line: #BBC1E1;
+  --line-active: #121314;
+}
+
+body {
+  padding: 5vh 10vw;
+}
+
+body #app h1 {
+  font-size: 3.5em;
+  margin-bottom: 0px;
+}
+
+body #app #name {
+  font-weight: 500;
+  font-size: 2.2em;
+  margin: 20px 0;
+}
+
+body #app p {
+  font-size: 1.6em;
+  line-height: 1.4;
+  max-width: 28em;
+  margin: 0;
+  font-weight: 300;
+}
+
+body #app p a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 var(--spacing, 0px);
+  -webkit-transition: margin .5s;
+  transition: margin .5s;
+}
+
+body #app p a svg {
+  width: auto;
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 7px) translateZ(0);
+          transform: translate(-50%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 69px) 278px;
+  stroke-dashoffset: 361px;
+  -webkit-transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.35s;
+}
+
+body #app p a:hover {
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: .1s;
+  --offset: 180px;
+}
+
+body #app p .media {
+  text-decoration: none;
+  color: #121314;
+  margin: 0 1px;
+}
+
+body #app .info {
+  line-height: 1.8;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script
+            defer
+            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+        <title>Ricky Wijaya</title>
+    </head>
+    <body>
+        <div id="app" x-data="data()">
+            <h1>Hi.</h1>
+            <p id="name">I'm <span x-text="name"></span></p>
+            <p class="info">
+                I'm an programmer and i love technology so much. Right now
+                working for
+                <a class="media" :href="weefer" target="_blank">
+                    Weefer
+                    <svg viewBox="0 0 70 36">
+                        <path
+                            d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527"
+                        />
+                    </svg>
+                </a>
+                as a fullstack developer. You can follow me on
+                <a class="media" :href="instagram" target="_blank">
+                    Instagram
+                    <svg viewBox="0 0 70 36">
+                        <path
+                            d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527"
+                        />
+                    </svg>
+                </a>
+                ,
+                <a class="media" :href="linkedIn" target="_blank">
+                    LinkedIn
+                    <svg viewBox="0 0 70 36">
+                        <path
+                            d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527"
+                        />
+                    </svg> </a
+                >, and
+                <a class="media" :href="github" target="_blank">
+                    Github
+                    <svg viewBox="0 0 70 36">
+                        <path
+                            d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527"
+                        />
+                    </svg> </a
+                >.
+            </p>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
